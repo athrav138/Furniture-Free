@@ -75,7 +75,7 @@
         </div>
         <div class="col-lg-7">
           <div class="hero-img-wrap">
-            <img src="images/couch.png" class="img-fluid" alt="Modern Couch">
+            <img src="images/sofa.png" class="img-fluid" alt="Modern Couch">
           </div>
         </div>
       </div>

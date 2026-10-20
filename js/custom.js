@@ -35,8 +35,12 @@
 	      var quantityAmount = quantityContainer.getElementsByClassName('quantity-amount')[0];
 	      var increase = quantityContainer.getElementsByClassName('increase')[0];
 	      var decrease = quantityContainer.getElementsByClassName('decrease')[0];
-	      increase.addEventListener('click', function (e) { increaseValue(e, quantityAmount); });
-	      decrease.addEventListener('click', function (e) { decreaseValue(e, quantityAmount); });
+	      if (increase && quantityAmount) {
+	        increase.addEventListener('click', function (e) { increaseValue(e, quantityAmount); });
+	      }
+	      if (decrease && quantityAmount) {
+	        decrease.addEventListener('click', function (e) { decreaseValue(e, quantityAmount); });
+	      }
 	    }
 
 	    function init() {

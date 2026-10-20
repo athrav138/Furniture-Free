@@ -11,7 +11,7 @@
     { id: 'furni-1', name: 'Nordic Chair', price: 50.00, category: 'chairs', image: 'images/product-1.png', rating: 4.8 },
     { id: 'furni-2', name: 'Kruzo Aero Chair', price: 78.00, category: 'chairs', image: 'images/product-2.png', rating: 4.9 },
     { id: 'furni-3', name: 'Ergonomic Chair', price: 43.00, category: 'chairs', image: 'images/product-3.png', rating: 4.7 },
-    { id: 'furni-4', name: 'Modern Studio Couch', price: 290.00, category: 'sofas', image: 'images/couch.png', rating: 5.0 },
+    { id: 'furni-4', name: 'Modern Studio Couch', price: 290.00, category: 'sofas', image: 'images/sofa.png', rating: 5.0 },
     { id: 'furni-5', name: 'Minimalist Wooden Chair', price: 55.00, category: 'chairs', image: 'images/product-1.png', rating: 4.6 },
     { id: 'furni-6', name: 'Comfort Lounge Chair', price: 82.00, category: 'chairs', image: 'images/product-2.png', rating: 4.8 },
     { id: 'furni-7', name: 'Executive Velvet Chair', price: 68.00, category: 'chairs', image: 'images/product-3.png', rating: 4.9 },
@@ -198,6 +198,18 @@
 
   // Initialize Page-Specific Logic on DOM Ready
   document.addEventListener('DOMContentLoaded', function () {
+    // Graceful fallback for any missing images
+    document.addEventListener('error', function (e) {
+      if (e.target && e.target.tagName === 'IMG') {
+        const src = e.target.getAttribute('src') || '';
+        if (src.includes('couch.png')) {
+          e.target.src = 'images/sofa.png';
+        } else if (!src.includes('product-1.png')) {
+          e.target.src = 'images/product-1.png';
+        }
+      }
+    }, true);
+
     // Inject cart badges into all cart nav links if not present
     setupNavbarCart();
 
