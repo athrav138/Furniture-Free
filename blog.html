@@ -1,0 +1,444 @@
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="Furni Blog - Interior Design Ideas, Guides, and Inspiration" />
+  <meta name="keywords" content="interior design blog, furniture care, home decor inspiration" />
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Blog &amp; Design Journal - Furni</title>
+</head>
+
+<body>
+
+  <!-- Start Header/Navigation -->
+  <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" aria-label="Furni navigation bar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Furni<span>.</span></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsFurni">
+        <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li><a class="nav-link" href="shop.html">Shop</a></li>
+          <li><a class="nav-link" href="about.html">About us</a></li>
+          <li><a class="nav-link" href="services.html">Services</a></li>
+          <li class="active"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li><a class="nav-link" href="contact.html">Contact us</a></li>
+        </ul>
+
+        <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+          <li><a class="nav-link" href="javascript:void(0)" title="My Account"><img src="images/user.svg" alt="User Account"></a></li>
+          <li>
+            <a class="nav-link position-relative" href="cart.html" title="Shopping Cart">
+              <img src="images/cart.svg" alt="Cart">
+              <span class="cart-badge badge rounded-pill bg-warning text-dark position-absolute top-0 start-100 translate-middle">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Header/Navigation -->
+
+  <!-- Start Hero Section -->
+  <div class="hero">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-5">
+          <div class="intro-excerpt">
+            <h1>Design Journal</h1>
+            <p class="mb-4">Guides, interviews, and styling tips from our interior designers to help you curate a balanced and comfortable living space.</p>
+            <p><a href="shop.html" class="btn btn-secondary me-2">Explore Shop</a><a href="about.html" class="btn btn-white-outline">Our Philosophy</a></p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="hero-img-wrap text-center">
+            <img src="images/couch.png" class="img-fluid" alt="Furni Living" style="max-height: 350px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Hero Section -->
+
+  <!-- Start Blog Section -->
+  <div class="blog-section">
+    <div class="container">
+      
+      <!-- Filter and Search -->
+      <div class="row mb-5">
+        <div class="col-lg-8 mx-auto text-center">
+          <div class="furni-search-box mb-4">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="blogSearchInput" class="form-control" placeholder="Search articles by title or topic...">
+          </div>
+
+          <div class="filter-pills" id="blogFilters">
+            <button class="filter-btn active" data-filter="all">All Articles</button>
+            <button class="filter-btn" data-filter="ideas">Decor Ideas</button>
+            <button class="filter-btn" data-filter="maintenance">Care &amp; Cleaning</button>
+            <button class="filter-btn" data-filter="spaces">Small Spaces</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="blogGrid">
+
+        <div class="col-12 col-sm-6 col-md-4 mb-5 blog-card" data-category="ideas">
+          <div class="post-entry bg-white p-3 rounded-4 shadow-sm h-100 d-flex flex-column">
+            <a href="javascript:void(0)" class="post-thumbnail mb-3 overflow-hidden rounded-3">
+              <img src="images/post-1.jpg" alt="First Time Home Owner Ideas" class="img-fluid w-100">
+            </a>
+            <div class="post-content-entry flex-grow-1 d-flex flex-column justify-content-between">
+              <div>
+                <span class="badge bg-secondary-subtle text-secondary mb-2">Decor Ideas</span>
+                <h3 class="h5"><a href="javascript:void(0)" class="text-black text-decoration-none">First Time Home Owner Ideas</a></h3>
+                <p class="text-muted small">Smart layout strategies and foundational furniture recommendations when furnishing your first new home.</p>
+              </div>
+              <div class="meta border-top pt-2 mt-3 small text-muted">
+                <span>by <strong>Kristin Watson</strong></span> &bull; <span>Dec 19, 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-5 blog-card" data-category="maintenance">
+          <div class="post-entry bg-white p-3 rounded-4 shadow-sm h-100 d-flex flex-column">
+            <a href="javascript:void(0)" class="post-thumbnail mb-3 overflow-hidden rounded-3">
+              <img src="images/post-2.jpg" alt="How To Keep Your Furniture Clean" class="img-fluid w-100">
+            </a>
+            <div class="post-content-entry flex-grow-1 d-flex flex-column justify-content-between">
+              <div>
+                <span class="badge bg-secondary-subtle text-secondary mb-2">Care &amp; Cleaning</span>
+                <h3 class="h5"><a href="javascript:void(0)" class="text-black text-decoration-none">How To Keep Your Furniture Clean</a></h3>
+                <p class="text-muted small">Simple, non-toxic techniques for maintaining fabric upholstery, natural oak woods, and leather finishes.</p>
+              </div>
+              <div class="meta border-top pt-2 mt-3 small text-muted">
+                <span>by <strong>Robert Fox</strong></span> &bull; <span>Dec 15, 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-5 blog-card" data-category="spaces">
+          <div class="post-entry bg-white p-3 rounded-4 shadow-sm h-100 d-flex flex-column">
+            <a href="javascript:void(0)" class="post-thumbnail mb-3 overflow-hidden rounded-3">
+              <img src="images/post-3.jpg" alt="Small Space Furniture Apartment Ideas" class="img-fluid w-100">
+            </a>
+            <div class="post-content-entry flex-grow-1 d-flex flex-column justify-content-between">
+              <div>
+                <span class="badge bg-secondary-subtle text-secondary mb-2">Small Spaces</span>
+                <h3 class="h5"><a href="javascript:void(0)" class="text-black text-decoration-none">Small Space Furniture Apartment Ideas</a></h3>
+                <p class="text-muted small">Maximal comfort in minimal square footage with multi-purpose seating, nesting tables, and sleek silhouettes.</p>
+              </div>
+              <div class="meta border-top pt-2 mt-3 small text-muted">
+                <span>by <strong>Kristin Watson</strong></span> &bull; <span>Dec 12, 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-5 blog-card" data-category="ideas">
+          <div class="post-entry bg-white p-3 rounded-4 shadow-sm h-100 d-flex flex-column">
+            <a href="javascript:void(0)" class="post-thumbnail mb-3 overflow-hidden rounded-3">
+              <img src="images/post-1.jpg" alt="Choosing the Right Solid Wood Dining Table" class="img-fluid w-100">
+            </a>
+            <div class="post-content-entry flex-grow-1 d-flex flex-column justify-content-between">
+              <div>
+                <span class="badge bg-secondary-subtle text-secondary mb-2">Decor Ideas</span>
+                <h3 class="h5"><a href="javascript:void(0)" class="text-black text-decoration-none">Choosing the Right Solid Wood Dining Table</a></h3>
+                <p class="text-muted small">From walnut grain to white oak, learn how to select a timeless tabletop built for entertaining and daily dining.</p>
+              </div>
+              <div class="meta border-top pt-2 mt-3 small text-muted">
+                <span>by <strong>David Miller</strong></span> &bull; <span>Nov 28, 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-5 blog-card" data-category="maintenance">
+          <div class="post-entry bg-white p-3 rounded-4 shadow-sm h-100 d-flex flex-column">
+            <a href="javascript:void(0)" class="post-thumbnail mb-3 overflow-hidden rounded-3">
+              <img src="images/post-2.jpg" alt="Ergonomic Work From Home Setup" class="img-fluid w-100">
+            </a>
+            <div class="post-content-entry flex-grow-1 d-flex flex-column justify-content-between">
+              <div>
+                <span class="badge bg-secondary-subtle text-secondary mb-2">Care &amp; Cleaning</span>
+                <h3 class="h5"><a href="javascript:void(0)" class="text-black text-decoration-none">Ergonomic Work From Home Setup</a></h3>
+                <p class="text-muted small">Protect posture, increase daily focus, and design an inviting study area that inspires creative flow.</p>
+              </div>
+              <div class="meta border-top pt-2 mt-3 small text-muted">
+                <span>by <strong>Sarah Connor</strong></span> &bull; <span>Nov 14, 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-5 blog-card" data-category="spaces">
+          <div class="post-entry bg-white p-3 rounded-4 shadow-sm h-100 d-flex flex-column">
+            <a href="javascript:void(0)" class="post-thumbnail mb-3 overflow-hidden rounded-3">
+              <img src="images/post-3.jpg" alt="Scandinavian Minimalism: Less is More" class="img-fluid w-100">
+            </a>
+            <div class="post-content-entry flex-grow-1 d-flex flex-column justify-content-between">
+              <div>
+                <span class="badge bg-secondary-subtle text-secondary mb-2">Small Spaces</span>
+                <h3 class="h5"><a href="javascript:void(0)" class="text-black text-decoration-none">Scandinavian Minimalism: Less is More</a></h3>
+                <p class="text-muted small">How natural textures, organic curves, and restrained color palettes create warmth without clutter.</p>
+              </div>
+              <div class="meta border-top pt-2 mt-3 small text-muted">
+                <span>by <strong>Robert Fox</strong></span> &bull; <span>Nov 02, 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- End Blog Section -->	
+
+  <!-- Start Testimonial Slider -->
+  <div class="testimonial-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 mx-auto text-center">
+          <h2 class="section-title">Designers Love Furni</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="testimonial-slider-wrap text-center">
+
+            <div id="testimonial-nav">
+              <span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+              <span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+            </div>
+
+            <div class="testimonial-slider">
+              
+              <div class="item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8 mx-auto">
+                    <div class="testimonial-block text-center">
+                      <blockquote class="mb-5">
+                        <p>&ldquo;Furni articles and pieces have fundamentally shifted how I furnish client spaces. Their attention to proportion and quality is world class.&rdquo;</p>
+                      </blockquote>
+
+                      <div class="author-info">
+                        <div class="author-pic">
+                          <img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+                        </div>
+                        <h3 class="font-weight-bold">Maria Jones</h3>
+                        <span class="position d-block mb-3">Principal Architect, Studio Arch</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8 mx-auto">
+                    <div class="testimonial-block text-center">
+                      <blockquote class="mb-5">
+                        <p>&ldquo;The practical tips on maintaining solid wood and organic fabrics helped us keep our furniture looking showroom fresh year after year.&rdquo;</p>
+                      </blockquote>
+
+                      <div class="author-info">
+                        <div class="author-pic">
+                          <img src="images/person_2.jpg" alt="David Miller" class="img-fluid rounded-circle" style="width: 80px; height: 80px; object-fit: cover; margin: 0 auto;">
+                        </div>
+                        <h3 class="font-weight-bold">David Miller</h3>
+                        <span class="position d-block mb-3">Residential Stylist, London</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Testimonial Slider -->
+
+  <!-- Start Footer Section -->
+  <footer class="footer-section">
+    <div class="container relative">
+
+      <div class="sofa-img">
+        <img src="images/sofa.png" alt="Furni Sofa" class="img-fluid">
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="subscription-form">
+            <h3 class="d-flex align-items-center">
+              <span class="me-2"><img src="images/envelope-outline.svg" alt="Envelope" class="img-fluid"></span>
+              <span>Subscribe to Newsletter</span>
+            </h3>
+
+            <form action="#" class="row g-3">
+              <div class="col-auto">
+                <input type="text" class="form-control" placeholder="Enter your name">
+              </div>
+              <div class="col-auto">
+                <input type="email" class="form-control" placeholder="Enter your email" required>
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary" title="Subscribe">
+                  <span class="fa fa-paper-plane"></span>
+                </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-5 mb-5">
+        <div class="col-lg-4">
+          <div class="mb-4 footer-logo-wrap"><a href="index.html" class="footer-logo">Furni<span>.</span></a></div>
+          <p class="mb-4">Designed for thoughtful homes. We craft modern, functional, and durable furniture using sustainable woods and premium textiles.</p>
+
+          <ul class="list-unstyled custom-social">
+            <li><a href="#" aria-label="Facebook"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+            <li><a href="#" aria-label="Twitter"><span class="fa fa-brands fa-twitter"></span></a></li>
+            <li><a href="#" aria-label="Instagram"><span class="fa fa-brands fa-instagram"></span></a></li>
+            <li><a href="#" aria-label="LinkedIn"><span class="fa fa-brands fa-linkedin"></span></a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="row links-wrap">
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li><a href="contact.html">Support</a></li>
+                <li><a href="about.html">Knowledge base</a></li>
+                <li><a href="contact.html">Live chat</a></li>
+                <li><a href="shop.html">Custom Orders</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li><a href="about.html">Careers</a></li>
+                <li><a href="about.html">Our team</a></li>
+                <li><a href="about.html">Sustainability</a></li>
+                <li><a href="contact.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li><a href="shop.html">Nordic Chair</a></li>
+                <li><a href="shop.html">Kruzo Aero</a></li>
+                <li><a href="shop.html">Ergonomic Chair</a></li>
+                <li><a href="shop.html">Studio Couch</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-top copyright">
+        <div class="row pt-4">
+          <div class="col-lg-6">
+            <p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Furni Modern Interior &amp; Furniture Studio. Distributed By <a href="https://themewagon.com" target="_blank" rel="noopener">ThemeWagon</a>
+            </p>
+          </div>
+
+          <div class="col-lg-6 text-center text-lg-end">
+            <ul class="list-unstyled d-inline-flex ms-auto">
+              <li class="me-4"><a href="contact.html">Terms &amp; Conditions</a></li>
+              <li><a href="contact.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- End Footer Section -->	
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/furni-shop.js"></script>
+  <script>
+    // Blog search & filter script
+    document.addEventListener('DOMContentLoaded', function () {
+      const searchInput = document.getElementById('blogSearchInput');
+      const filterBtns = document.querySelectorAll('#blogFilters .filter-btn');
+      const cards = document.querySelectorAll('.blog-card');
+
+      let currentFilter = 'all';
+
+      function applyFilters() {
+        const query = (searchInput ? searchInput.value : '').toLowerCase().trim();
+
+        cards.forEach(card => {
+          const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
+          const category = card.dataset.category || '';
+          const matchesCategory = (currentFilter === 'all' || category === currentFilter);
+          const matchesQuery = !query || title.includes(query);
+
+          if (matchesCategory && matchesQuery) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      if (searchInput) searchInput.addEventListener('input', applyFilters);
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          currentFilter = this.dataset.filter;
+          applyFilters();
+        });
+      });
+    });
+  </script>
+</body>
+</html>

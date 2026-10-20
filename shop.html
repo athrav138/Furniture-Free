@@ -1,0 +1,387 @@
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="Furni Catalog - Premium Handcrafted Furniture" />
+  <meta name="keywords" content="furniture catalog, modern chairs, couches, scandinavian design" />
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Shop Modern Furniture - Furni</title>
+</head>
+
+<body>
+
+  <!-- Start Header/Navigation -->
+  <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" aria-label="Furni navigation bar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Furni<span>.</span></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsFurni">
+        <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="active"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li><a class="nav-link" href="about.html">About us</a></li>
+          <li><a class="nav-link" href="services.html">Services</a></li>
+          <li><a class="nav-link" href="blog.html">Blog</a></li>
+          <li><a class="nav-link" href="contact.html">Contact us</a></li>
+        </ul>
+
+        <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+          <li><a class="nav-link" href="javascript:void(0)" title="My Account"><img src="images/user.svg" alt="User Account"></a></li>
+          <li>
+            <a class="nav-link position-relative" href="cart.html" title="Shopping Cart">
+              <img src="images/cart.svg" alt="Cart">
+              <span class="cart-badge badge rounded-pill bg-warning text-dark position-absolute top-0 start-100 translate-middle">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Header/Navigation -->
+
+  <!-- Start Hero Section -->
+  <div class="hero">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-5">
+          <div class="intro-excerpt">
+            <h1>Our Collection</h1>
+            <p class="mb-4">Explore handcrafted chairs, couches, and interior showpieces created with timeless Scandinavian minimalism and ergonomic precision.</p>
+            <p><a href="#catalog-section" class="btn btn-secondary me-2">Browse All</a><a href="cart.html" class="btn btn-white-outline">View Cart</a></p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="hero-img-wrap text-center">
+            <img src="images/couch.png" class="img-fluid" alt="Furni Living" style="max-height: 380px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Hero Section -->
+
+  <!-- Catalog Section -->
+  <div class="untree_co-section product-section before-footer-section" id="catalog-section">
+    <div class="container">
+      
+      <!-- Search and Filter Controls -->
+      <div class="row mb-5">
+        <div class="col-lg-8 mx-auto text-center">
+          <div class="furni-search-box mb-4">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="shopSearchInput" class="form-control" placeholder="Search furniture by name or style...">
+          </div>
+
+          <div class="filter-pills" id="shopFilters">
+            <button class="filter-btn active" data-filter="all">All Items</button>
+            <button class="filter-btn" data-filter="chairs">Chairs &amp; Seating</button>
+            <button class="filter-btn" data-filter="sofas">Sofas &amp; Lounges</button>
+            <button class="filter-btn" data-filter="under60">Under $60</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="row" id="productGrid">
+
+        <!-- Column 1 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5 product-card" data-category="chairs" data-price="50">
+          <a class="product-item" href="javascript:void(0)" data-id="furni-1">
+            <img src="images/product-1.png" class="img-fluid product-thumbnail" alt="Nordic Chair">
+            <h3 class="product-title">Nordic Chair</h3>
+            <strong class="product-price">$50.00</strong>
+            <span class="icon-cross" title="Add to Cart">
+              <img src="images/cross.svg" class="img-fluid" alt="Add to cart">
+            </span>
+          </a>
+        </div> 
+
+        <!-- Column 2 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5 product-card" data-category="chairs" data-price="78">
+          <a class="product-item" href="javascript:void(0)" data-id="furni-2">
+            <img src="images/product-2.png" class="img-fluid product-thumbnail" alt="Kruzo Aero Chair">
+            <h3 class="product-title">Kruzo Aero Chair</h3>
+            <strong class="product-price">$78.00</strong>
+            <span class="icon-cross" title="Add to Cart">
+              <img src="images/cross.svg" class="img-fluid" alt="Add to cart">
+            </span>
+          </a>
+        </div> 
+
+        <!-- Column 3 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5 product-card" data-category="chairs" data-price="43">
+          <a class="product-item" href="javascript:void(0)" data-id="furni-3">
+            <img src="images/product-3.png" class="img-fluid product-thumbnail" alt="Ergonomic Chair">
+            <h3 class="product-title">Ergonomic Chair</h3>
+            <strong class="product-price">$43.00</strong>
+            <span class="icon-cross" title="Add to Cart">
+              <img src="images/cross.svg" class="img-fluid" alt="Add to cart">
+            </span>
+          </a>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5 product-card" data-category="sofas" data-price="290">
+          <a class="product-item" href="javascript:void(0)" data-id="furni-4">
+            <img src="images/couch.png" class="img-fluid product-thumbnail" alt="Modern Studio Couch">
+            <h3 class="product-title">Modern Studio Couch</h3>
+            <strong class="product-price">$290.00</strong>
+            <span class="icon-cross" title="Add to Cart">
+              <img src="images/cross.svg" class="img-fluid" alt="Add to cart">
+            </span>
+          </a>
+        </div>
+
+        <!-- Column 5 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5 product-card" data-category="chairs" data-price="55">
+          <a class="product-item" href="javascript:void(0)" data-id="furni-5">
+            <img src="images/product-1.png" class="img-fluid product-thumbnail" alt="Minimalist Wooden Chair">
+            <h3 class="product-title">Minimalist Wooden Chair</h3>
+            <strong class="product-price">$55.00</strong>
+            <span class="icon-cross" title="Add to Cart">
+              <img src="images/cross.svg" class="img-fluid" alt="Add to cart">
+            </span>
+          </a>
+        </div> 
+
+        <!-- Column 6 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5 product-card" data-category="chairs" data-price="82">
+          <a class="product-item" href="javascript:void(0)" data-id="furni-6">
+            <img src="images/product-2.png" class="img-fluid product-thumbnail" alt="Comfort Lounge Chair">
+            <h3 class="product-title">Comfort Lounge Chair</h3>
+            <strong class="product-price">$82.00</strong>
+            <span class="icon-cross" title="Add to Cart">
+              <img src="images/cross.svg" class="img-fluid" alt="Add to cart">
+            </span>
+          </a>
+        </div> 
+
+        <!-- Column 7 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5 product-card" data-category="chairs" data-price="68">
+          <a class="product-item" href="javascript:void(0)" data-id="furni-7">
+            <img src="images/product-3.png" class="img-fluid product-thumbnail" alt="Executive Velvet Chair">
+            <h3 class="product-title">Executive Velvet Chair</h3>
+            <strong class="product-price">$68.00</strong>
+            <span class="icon-cross" title="Add to Cart">
+              <img src="images/cross.svg" class="img-fluid" alt="Add to cart">
+            </span>
+          </a>
+        </div>
+
+        <!-- Column 8 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5 product-card" data-category="sofas" data-price="340">
+          <a class="product-item" href="javascript:void(0)" data-id="furni-8">
+            <img src="images/sofa.png" class="img-fluid product-thumbnail" alt="Contemporary Sofa">
+            <h3 class="product-title">Contemporary Sofa</h3>
+            <strong class="product-price">$340.00</strong>
+            <span class="icon-cross" title="Add to Cart">
+              <img src="images/cross.svg" class="img-fluid" alt="Add to cart">
+            </span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- No items found alert -->
+      <div id="noProductsFound" class="text-center py-5 d-none">
+        <i class="fas fa-search fa-3x text-muted mb-3"></i>
+        <h4 class="text-black">No furniture pieces matched your search</h4>
+        <p class="text-muted">Try using a different keyword or reset filters to see all available items.</p>
+        <button class="btn btn-outline-dark mt-2" onclick="document.getElementById('shopSearchInput').value=''; document.querySelector('.filter-btn[data-filter=\'all\']').click();">Reset Filters</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Start Footer Section -->
+  <footer class="footer-section">
+    <div class="container relative">
+
+      <div class="sofa-img">
+        <img src="images/sofa.png" alt="Furni Sofa" class="img-fluid">
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="subscription-form">
+            <h3 class="d-flex align-items-center">
+              <span class="me-2"><img src="images/envelope-outline.svg" alt="Envelope" class="img-fluid"></span>
+              <span>Subscribe to Newsletter</span>
+            </h3>
+
+            <form action="#" class="row g-3">
+              <div class="col-auto">
+                <input type="text" class="form-control" placeholder="Enter your name">
+              </div>
+              <div class="col-auto">
+                <input type="email" class="form-control" placeholder="Enter your email" required>
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary" title="Subscribe">
+                  <span class="fa fa-paper-plane"></span>
+                </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-5 mb-5">
+        <div class="col-lg-4">
+          <div class="mb-4 footer-logo-wrap"><a href="index.html" class="footer-logo">Furni<span>.</span></a></div>
+          <p class="mb-4">Designed for thoughtful homes. We craft modern, functional, and durable furniture using sustainable woods and premium textiles.</p>
+
+          <ul class="list-unstyled custom-social">
+            <li><a href="#" aria-label="Facebook"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+            <li><a href="#" aria-label="Twitter"><span class="fa fa-brands fa-twitter"></span></a></li>
+            <li><a href="#" aria-label="Instagram"><span class="fa fa-brands fa-instagram"></span></a></li>
+            <li><a href="#" aria-label="LinkedIn"><span class="fa fa-brands fa-linkedin"></span></a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="row links-wrap">
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li><a href="contact.html">Support</a></li>
+                <li><a href="about.html">Knowledge base</a></li>
+                <li><a href="contact.html">Live chat</a></li>
+                <li><a href="shop.html">Custom Orders</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li><a href="about.html">Careers</a></li>
+                <li><a href="about.html">Our team</a></li>
+                <li><a href="about.html">Sustainability</a></li>
+                <li><a href="contact.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li><a href="shop.html">Nordic Chair</a></li>
+                <li><a href="shop.html">Kruzo Aero</a></li>
+                <li><a href="shop.html">Ergonomic Chair</a></li>
+                <li><a href="shop.html">Studio Couch</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-top copyright">
+        <div class="row pt-4">
+          <div class="col-lg-6">
+            <p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Furni Modern Interior &amp; Furniture Studio. Distributed By <a href="https://themewagon.com" target="_blank" rel="noopener">ThemeWagon</a>
+            </p>
+          </div>
+
+          <div class="col-lg-6 text-center text-lg-end">
+            <ul class="list-unstyled d-inline-flex ms-auto">
+              <li class="me-4"><a href="contact.html">Terms &amp; Conditions</a></li>
+              <li><a href="contact.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- End Footer Section -->	
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/furni-shop.js"></script>
+  <script>
+    // In-page search & filter script
+    document.addEventListener('DOMContentLoaded', function () {
+      const searchInput = document.getElementById('shopSearchInput');
+      const filterBtns = document.querySelectorAll('#shopFilters .filter-btn');
+      const cards = document.querySelectorAll('.product-card');
+      const noFound = document.getElementById('noProductsFound');
+
+      let currentFilter = 'all';
+
+      function applyFilters() {
+        const query = (searchInput ? searchInput.value : '').toLowerCase().trim();
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const title = card.querySelector('.product-title')?.textContent.toLowerCase() || '';
+          const category = card.dataset.category || '';
+          const price = parseFloat(card.dataset.price) || 0;
+
+          let matchesCategory = false;
+          if (currentFilter === 'all') matchesCategory = true;
+          else if (currentFilter === 'under60') matchesCategory = (price < 60);
+          else matchesCategory = (category === currentFilter);
+
+          const matchesQuery = !query || title.includes(query);
+
+          if (matchesCategory && matchesQuery) {
+            card.style.display = '';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if (noFound) {
+          if (visibleCount === 0) noFound.classList.remove('d-none');
+          else noFound.classList.add('d-none');
+        }
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', applyFilters);
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          currentFilter = this.dataset.filter;
+          applyFilters();
+        });
+      });
+    });
+  </script>
+</body>
+</html>
